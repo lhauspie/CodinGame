@@ -1,0 +1,37 @@
+= CodinGame Sponsored Contest
+
+== reverse engineering
+
+https://www.codingame.com/ide/puzzle/codingame-sponsored-contest
+
+  X 0 1 2
+Y 
+0   X # X
+2   _ O _
+3   X # X
+  
+== Données d'initialisation du jeu :
+*Ligne 1* : Hauteur du plateau +
+*Ligne 2* : Largeur du plateau +
+*Ligne 3* : Nombre de pions sur le plateau (1 player et n others) + 
+ 
+== Données d'entrée d'un tour de jeu
+*Ligne 1* : Contenu de la cellule du plateau se trouvant en haut du player (# pour un mur / _ pour du vide) +
+*Ligne 2* : Contenu de la cellule du plateau se trouvant à droite du player (# pour un mur / _ pour du vide) +
+*Ligne 3* : Contenu de la cellule du plateau se trouvant en bas du player (# pour un mur / _ pour du vide) +
+*Ligne 4* : Contenu de la cellule du plateau se trouvant à gauche du player (# pour un mur / _ pour du vide) +
+*Ligne 5.n* : Position en X du pion n, n étant le numéro du pion +
+*Ligne 6.n* : Position en Y du pion n, n étant le numéro du pion +
+
+== Complément :
+Le player est le dernier pion de la liste 5/6 +
+Les autres pions 5/6 sont des adverseres a éviter +
+Le jeu est fini quand un other touche le player +
+Le plateau est un tore +
+  
+== Données de sortie :
+"D" : Déplacer le pion player vers le bas (_player.y&#43;&#43;_) +
+"C" : Déplacer le pion player vers le haut (_player.y--_) +
+"A" : Déplacer le pion player vers la droite (_player.x&#43;&#43;_) +
+"E" : Déplacer le pion player vers la gauche (_player.x--_) +
+"B" : Attendre +

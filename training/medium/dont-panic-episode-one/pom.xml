@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<artifactId>training-medium-dont-panic-episode-one</artifactId>
+	
+	<parent>
+		<groupId>com.lhauspie.codingame</groupId>
+		<artifactId>codin-game</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../../..</relativePath>
+	</parent>
+	
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.ndx.codingame</groupId>
+				<artifactId>codingame-simpleclass-maven-plugin</artifactId>
+				<configuration>
+					<playerClass>${project.build.sourceDirectory}/training/medium/dontpanic/episode/one/Player.java</playerClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
